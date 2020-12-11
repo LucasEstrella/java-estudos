@@ -3,3 +3,7 @@ Fornecidos separadamente o nome e o sobrenome pelo usuário, Elabore um algoritmo
 Oq compoe um método?
 Diferença de private, protected e public?
 Quais são os operadores lógicos? 
+Faça um algoritmo que leia o nome de um produto, seu preço e se há desconto. Se a resposta for afirmativa, solicite o percentual, calcule o desconto e apresente o novo preço
+
+&&
+||
