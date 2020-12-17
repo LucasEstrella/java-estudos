@@ -3,6 +3,7 @@ package model;
 public class Pessoa {
 	private String nome;
 	private String sobrenome;
+	private int idade;
 	
 	public String getNome() {
 		return nome;
@@ -16,11 +17,17 @@ public class Pessoa {
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
 	}
-	
-	public String toString() {
-		
-		return "["+ this.nome + " " + this.sobrenome +"]";
+	public int getIdade() {
+		return idade;
 	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+//	public String toString() {
+//		
+//		return "["+ this.nome + " " + this.sobrenome +"]";
+//	}
 	
 
 }
