@@ -18,26 +18,25 @@ public class TestaCalculadora {
 		
 		System.out.println("Qual operação matemática deseja fazer(+ - * /): ");
 		String op;
-		double res;
 		op = sc.next();
 		
 		switch(op){
 			case "+": 
-				res = c1.getNumero1() + c1.getNumero2();
-				System.out.println("Resultado da Soma: "+res);
+				c1.setResultado(c1.somar(c1.getNumero1(), c1.getNumero2()));
+				System.out.println("Resultado da Soma: "+c1.getResultado());
 				break;
 			case "-":
-				res = c1.getNumero1() - c1.getNumero2();
-				System.out.println("Resultado da Subtração: "+res);
+				c1.setResultado(c1.subtrair(c1.getNumero1(), c1.getNumero2()));
+				System.out.println("Resultado da Subtração: "+c1.getResultado());
 				break;
 			case "*":
-				res = c1.getNumero1() * c1.getNumero2();
-				System.out.println("Resultado da Multiplicação: "+res);
+				c1.setResultado(c1.multiplicar(c1.getNumero1(), c1.getNumero2()));
+				System.out.println("Resultado da Multiplicação: "+c1.getResultado());
 				break;
 			case "/":
 				if(c1.getNumero2() != 0){
-					res = c1.getNumero1() / c1.getNumero2();
-					System.out.println("Resultado da Divisão: "+res);
+					c1.setResultado(c1.dividir(c1.getNumero1(), c1.getNumero2()));
+					System.out.println("Resultado da Divisão: "+c1.getResultado());
 				}else {
 					System.out.println("Não é possivel dividir com divisor igual a ZERO!!!");
 				}

@@ -6,11 +6,11 @@ public class MaiorMenor {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int maior = 0;
-		int menor = 100;
+		double maior = Double.NEGATIVE_INFINITY ;
+		double menor = Double.POSITIVE_INFINITY;
 		int contador;
 		int valor;
-		int constante = 50;
+		final int constante = 50;
 		
 		for (contador = 0; contador <= constante; contador++) {
 			

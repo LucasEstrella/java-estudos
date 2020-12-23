@@ -28,30 +28,36 @@ public class CalculaVotacao {
 		while(op != 0) {
 			System.out.println("Escolha uma opção: ");
 			op = sc.nextInt();
-			contador++;
+//			contador++;
 			switch(op) {
 				case 1:
-					cand1 += contador;
+					cand1++;
+//					cand1 += contador;
 				break;
 				
 				case 2:
-					cand2 += contador;
+					cand2++;
+//					cand2 += contador;
 				break;
 				
 				case 3:
-					cand3 += contador;
+					cand3++;
+//					cand3 += contador;
 				break;	
 				
 				case 4:
-					cand4 += contador;
+					cand4++;
+//					cand4 += contador;
 				break;
 				
 				case 5:
-					nulo += contador;
+					nulo++;
+//					nulo += contador;
 				break;
 				
 				case 6:
-					branco += contador;
+					branco++;
+//					branco += contador;
 				break;	
 				
 				default:
@@ -59,7 +65,7 @@ public class CalculaVotacao {
 					System.out.println();
 				break;
 			}
-			contador = 0;
+//			contador = 0;
 		}
 		System.out.println("Total Votação");
 		System.out.println("Candidato 1 totalizou "+cand1+" votos.");
