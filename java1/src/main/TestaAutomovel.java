@@ -1,14 +1,17 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+import model.Automovel;
 import model.Carro;
 import model.Moto;
 
 public class TestaAutomovel {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+		List<Automovel> lista = new ArrayList<Automovel>();
 		String res;
 		System.out.println("Qual tipo de automóvel: c= carro / m= moto");
 		res = sc.next();
@@ -26,7 +29,9 @@ public class TestaAutomovel {
 			System.out.println("Que tipo de cambio: ");
 			carro.setCambio(sc.next());
 			System.out.println();
-			System.out.println(carro.toString());
+//			System.out.println(carro.toString());
+			lista.add(carro);
+			
 			
 		}else if(res.equals("m")) {
 			Moto moto = new Moto();
@@ -43,6 +48,10 @@ public class TestaAutomovel {
 			moto.setCarenagem(sc.next());
 			System.out.println();	
 			System.out.println(moto.toString());
+			lista.add(moto);
+		}
+		for (Automovel automovel : lista) {
+			automovel.toString();
 		}
 		sc.close();
 	}

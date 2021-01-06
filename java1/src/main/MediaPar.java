@@ -13,13 +13,13 @@ public class MediaPar {
 		
 		System.out.println("Calculador de Média !!!");
 		do {
-		System.out.println("Informe o valor da Nota, ou -1 para Encerrar: ");
+		System.out.println("Informe o valor da Nota, ou 0 para Encerrar: ");
 		nota = sc.nextDouble();
-		if(nota % 2 == 0){
+		if(nota % 2 == 0 && nota > 0){
 			somapar += nota;
 			contador++;
 		}
-		}while(nota != -1);
+		}while(nota != 0);
 		media = somapar / contador;
 		System.out.println("Média: "+media);
 	}
